@@ -1,7 +1,7 @@
 ﻿Imports System.IO   'DO NOT DELETE
 
 'Name: Death by taxes
-'Purpose: Show the number of deaths, and tax rate for users brand of cigs.
+'Purpose: Show the number of deaths, and tax rate for users brand of cigarettes.
 'Author: Travis Seal
 'Date: 02/04/16
 
@@ -46,26 +46,28 @@ Module modStudent
         sAnswer = ReadChar()
 
         'conditions
-        If sAnswer = 1 Then
+        If sAnswer = "1" Then
             DisplayLine()
             SetBackgroundColor(Color.Red)
             DisplayLine(sBrand1Name & " causes " & sBrand1Deaths & " deaths per year")
-            DisplayLine("Your death tax is " & sBrand1Deaths)
-        ElseIf sAnswer = 2 Then
+            DisplayLine("Your death tax is " & sBrand1Tax)
+        ElseIf sAnswer = "2" Then
             DisplayLine()
             SetBackgroundColor(Color.Red)
             DisplayLine(sBrand2Name & " causes " & sBrand2Deaths & " deaths per year")
-            DisplayLine("Your death tax is " & sBrand2Deaths)
-        ElseIf sAnswer = 3 Then
+            DisplayLine("Your death tax is " & sBrand2Tax)
+        ElseIf sAnswer = "3" Then
             DisplayLine()
             SetBackgroundColor(Color.Red)
             DisplayLine(sBrand3Name & " causes " & sBrand3Deaths & " deaths per year")
-        ElseIf sAnswer = 4 Then
+            DisplayLine("Your death tax is " & sBrand3Tax)
+        ElseIf sAnswer = "4" Then
             DisplayLine()
             SetBackgroundColor(Color.Red)
             DisplayLine(sBrand4Name & " causes " & sBrand4Deaths & " deaths per year")
-            DisplayLine("Your death tax is " & sBrand4Deaths)
+            DisplayLine("Your death tax is " & sBrand4Tax)
         Else 'next add the Else
+            SetBackgroundColor(Color.Red)
             DisplayLine("Error: Enter 1 through 4")
         End If
 
