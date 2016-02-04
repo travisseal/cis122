@@ -9,6 +9,7 @@ Module modStudent
 
     Public Sub RunProject()
         'Project Header:
+        SetTitle("Death by Cigarettes")
 
         DisplayLine("Cigarette Brands")
 
