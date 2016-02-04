@@ -66,7 +66,7 @@ Module modStudent
             SetBackgroundColor(Color.Red)
             DisplayLine(sBrand4Name & " causes " & sBrand4Deaths & " deaths per year")
             DisplayLine("Your death tax is " & sBrand4Tax)
-        Else 'next add the Else
+        Else
             SetBackgroundColor(Color.Red)
             DisplayLine("Error: Enter 1 through 4")
         End If
